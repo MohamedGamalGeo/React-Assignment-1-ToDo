@@ -51,10 +51,10 @@ function ToDo() {
                 {tasks.map((task, index) => (
                     <li key={index}>
                         <span>
-                            <strong>Task:</strong> {task.name} <br />
-                            <strong>Description:</strong> {task.description}
+                            <strong>Task:</strong> {task.name}   <strong>Description:</strong> {task.description} <a href='onClick={() => deleteTask(index)}' >Done </a> <br />
+                          
                         </span>
-                        <button onClick={() => deleteTask(index)}>Done</button>
+                        
                     </li>
                 ))}
             </ul>
